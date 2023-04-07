@@ -56,7 +56,7 @@ const Navbar = () => {
         left={0}
         boxShadow="0 2px 10px #4ca5ff"
         // p="0px 20px"
-        p="20px 100px"
+        p="0px 30px"
         width="100%"
         height="100px"
         zIndex="1000"

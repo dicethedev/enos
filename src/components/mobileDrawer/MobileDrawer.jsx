@@ -38,7 +38,7 @@ return (
               }}
             />
           </Suspense>
-      <Button ref={btnRef} onClick={onOpen} ml="30px" bg="none" color="blue.400">
+      <Button ref={btnRef} onClick={onOpen} bg="none" color="blue.400">
         <IoMdMenu size="40px"  />
       </Button>
       

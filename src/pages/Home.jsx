@@ -35,50 +35,48 @@ const Home = () => {
                <HStack  justifyContent="center" alignItems="center"
                pt={isMobile ? "40px" : ""}
                >
-                <Image src={enosCoinPng} width={isMobile ? "400px" :"530px"} height={isMobile ? "400px" :"540px"} />
+                <Image src={enosCoinPng} width={isMobile ? "350px" :"510px"} height={isMobile ? "350px" : "515px"} />
                 </HStack>
                  
                 <Flex flexDir="column">
                  <Heading textAlign="center" color="white" 
                    className="animate__animated animate__backInUp"
                    pt={isMobile ? "20px" : ""}
-                   fontSize={isMobile ? "110px" : "130px"} letterSpacing="20px"
+                   fontSize={isMobile ? "100px" : "130px"} letterSpacing="20px"
                    >
                     ENOS
                  </Heading>
                  <Heading textAlign="center" color="white" 
                    className="animate__animated animate__backInUp"
-                   fontSize={isMobile ? "110px" : "130px"} letterSpacing="20px"
+                   fontSize={isMobile ? "100px" : "130px"} letterSpacing="20px"
                    >
                     COIN
                  </Heading>
 
                  <Suspense fallback={<Spinner size="sm" />}>
                  <Button
-                       variant="solid"
-                       bg={isClicked ? "#398DDB" : "#F5A623"}
-                       fontWeight="bold"
-                       fontSize="2xl"
-                       width="60%"
-                       height="80px"
-                       borderRadius="20px"
-                       boxShadow={isHovering ? "xl" : "none"}
-                       transition="all 0.3s"
-                       mt="60px"
-                       _hover={{
-                         transform: "translateY(-5px)",
-                         boxShadow: "xl",
-                       }}
-                       onClick={() => setIsClicked(!isClicked)}
-                       onMouseEnter={() => setIsHovering(true)}
-                       onMouseLeave={() => setIsHovering(false)}
-                     >
-                       {isClicked ? "ROCK ON! 🤘" : "Buy Now"}
-                     </Button>
+                    variant="solid"
+                    bg={isClicked ? "#398DDB" : "#F5A623"}
+                    fontWeight="bold"
+                    fontSize="2xl"
+                    width="60%"
+                    height="80px"
+                    borderRadius="20px"
+                    boxShadow={isHovering ? "xl" : "none"}
+                    transition="all 0.3s"
+                    mt="60px"
+                    _hover={{
+                     transform: "translateY(-6px)",
+                        boxShadow: "xl",
+                    }}
+                    onClick={() => setIsClicked(!isClicked)}
+                    onMouseEnter={() => setIsHovering(true)}
+                    onMouseLeave={() => setIsHovering(false)}
+                  >
+                     {isClicked ? "ROCK ON!🤘" : "Buy Now"}
+                    </Button>
                   </Suspense>
-
                 </Flex>
-    
                 <Flex>
                 </Flex>
              </Flex>
