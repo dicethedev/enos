@@ -8,7 +8,7 @@ const CustomCursor = () => {
     setPosition({x: event.clientX, y: event.clientY});
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     document.addEventListener('mousemove', onMouseMove);
 
     return () => {
