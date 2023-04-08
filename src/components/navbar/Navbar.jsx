@@ -113,18 +113,6 @@ export default Navbar;
 
 export const useNavbarStyles = () => {
     return {
-        logoFont: {
-           fontSize: "22px",
-           fontWeight: "600",
-           lineHeight: "36px",
-        },
-        ctaFont: {
-            fontSize: "14px",
-            fontWeight: "400",
-            lineHeight: "20px",
-            letterSpacing: "0.1px",
-            color: "white",
-        },
         visible: {
           top: "0",
           translate: "0"

@@ -6,7 +6,9 @@ import {Box,
  Heading,
  Image,
  Button,
- useBreakpointValue
+ useBreakpointValue,
+ Stack,
+ Text
 } from '@chakra-ui/react'
 import Navbar from '../components/navbar/Navbar'
 import Container from '../components/Container'
@@ -26,9 +28,9 @@ const Home = () => {
       <Navbar />
 
       <Box w={"100%"} {...root}>
-      <Flex bgRepeat="no-repeat" bgSize="cover" bgImage="url('/images/VectorBg.svg')" bgColor="black">
+      <Flex bgRepeat="no-repeat" bgSize="cover" bgImage="url('/images/enoscoin.mp4')" bgColor="black">
       <Container>
-        <Flex {...homeBg}>
+        <Flex {...homeBg} id="home">
               {/*  ------------------------------------------- WELCOME HOME TEXT AREA ---------------------------------------------- */}
               <Flex w={"100%"} align="center" flexDirection={isMobile ? "column" : "row"} py={"7%"} justify="space-between"
               >
@@ -82,6 +84,35 @@ const Home = () => {
              </Flex>
         </Flex>
         </Container>
+      </Flex>
+
+            
+     <Flex bgColor="black" flexDir="column">
+     <Stack bgRepeat="no-repeat" bgSize="cover">
+        <Container>
+            <Flex w={"100%"} align="center" flexDir={"column"} pt="60px">
+                <Box p="80px 100px" borderRadius="50px"
+                    backgroundClip={`"content-box", "border-box"`}
+                    style={{ backgroundImage: 'linear-gradient(96.94deg, #F5A623 0%, #398DDB 16.81%, #F5A623 33.63%)',
+                     backgroundOrigin: "border-box",
+                     border: "4px solid transparent",
+                     boxShadow: "rgba(240, 239, 253, 1) 1px 1000px 1px inset",
+                  }}
+                  bgColor="white"
+                >
+                  <Flex justify="space-between" direction="row">
+                    <Flex flexDir="column">
+                      <Text>Blessing</Text>
+                    </Flex>
+
+                    <Flex>
+                     <Text>Blessing</Text>
+                    </Flex>
+                  </Flex>
+                </Box>
+            </Flex>
+        </Container>
+      </Stack>
       </Flex>
       </Box>
     </Box>
