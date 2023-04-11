@@ -38,7 +38,7 @@ return (
               }}
             />
           </Suspense>
-      <Button ref={btnRef} onClick={onOpen} bg="none" color="blue.400">
+      <Button ref={btnRef} onClick={onOpen} bg="none" color="blue.400" _hover={{ bg: "none" }}>
         <IoMdMenu size="40px"  />
       </Button>
       
