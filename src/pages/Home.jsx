@@ -109,7 +109,7 @@ const Home = () => {
                     alignItems={isMobile ? "center" : ""}
                     >
                         <Heading fontSize={isMobile ? "25px" :"40px"} fontWeight="500" color="#f89e52" mb="20px">Enos Coin</Heading>
-                        <Heading fontSize={isMobile ? "40px" : "80px"} fontWeight="700" pb="15px">About Enos</Heading>
+                        <Heading fontSize={isMobile ? "30px" : "80px"} fontWeight="700" pb="15px">About Enos</Heading>
                         <Heading opacity="0.5" fontSize={isMobile ? "18px" :"21px"} color="#5f5f71"
                         width={isMobile ? "100%" : "80%"}
                         pb="40px"
