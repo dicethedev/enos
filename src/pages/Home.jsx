@@ -95,7 +95,7 @@ const Home = () => {
      <Flex bgColor="black" flexDir="column">
         <Container>
             <Flex w={"100%"} flexDir={"column"} {...homeBg}>
-                <Box p="30px 100px" borderRadius="100px"
+                <Box p="30px 100px" borderRadius="50px"
                 //     backgroundClip={`"content-box", "border-box"`}
                 //     style={{ backgroundImage: 'linear-gradient(96.94deg, #F5A623 0%, #398DDB 16.81%, #F5A623 33.63%)',
                 //      backgroundOrigin: "border-box",
