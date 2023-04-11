@@ -23,7 +23,7 @@ const Home = () => {
     const { root, homeBg } = useStyles();
     const [isHovering, setIsHovering] = useState(false);
     const [isClicked, setIsClicked] = useState(false);
-    const isMobile = useBreakpointValue({ base: true, md: false });
+    const isMobile = useBreakpointValue({ base: true, md: true, lg: false });
 
   return (
     <Box w={"100%"}>
@@ -132,15 +132,18 @@ const Home = () => {
 
                         <Divider width="80%" height="1.5px" bg="radial-gradient(circle, rgba(196, 208, 217, 1) 0%, rgba(218, 226, 233, 0.44021358543417366) 100%)" />
                         
-                        <Flex pt="20px" flexDir={isMobile ? "column" : "row" }
-                          justify={isMobile ? "center" : "center" }
-                          alignItems="center" w={isMobile ? "100%" :"80%"}>
-                            <Text color="#0b0b0b" width="55%" fontSize={isMobile ? "16px" : "18px" } 
+                        <HStack pt="20px" flexDir={isMobile ? "column" : "row" }
+                          alignItems="center" w={isMobile ? "100%" :"80%"}
+                        justify="space-between"
+                          >
+                            <Flex>
+                            <Text color="#0b0b0b" fontSize={isMobile ? "16px" : "18px" } 
                              fontWeight="500"
                              mb={isMobile ? "20px" : "" }
                              >
                               Join Community
                             </Text>
+                            </Flex>
 
 
                 <Suspense fallback={<Spinner size="sm" />}>
@@ -149,7 +152,7 @@ const Home = () => {
                     bg={isClicked ? "#F5A623" : "#398DDB"}
                     fontWeight="bold"
                     fontSize={isMobile ? "18px" : "20px" } 
-                    width={isMobile ? "100%" :"50%"}
+                    width={isMobile ? "50%" :"55%"}
                     height="80px"
                     borderRadius="20px"
                     color="white"
@@ -166,12 +169,12 @@ const Home = () => {
                      {isClicked ? "Welcome Member!🤘" : "JOIN TELEGRAM"}
                     </Button>
                   </Suspense>
-                        </Flex>
+                        </HStack>
                     
                     </Stack>
 
                     <Flex pt={isMobile ? "40px" : ""}>
-                       <Image src={enosSpaceImg} alt="" maxWidth={isMobile ? "200px" : "500px"} />
+                       <Image src={enosSpaceImg} alt="" maxWidth={isMobile ? "200px" : "400px"} />
                     </Flex>
 
                   </HStack>
