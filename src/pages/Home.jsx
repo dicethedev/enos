@@ -152,7 +152,7 @@ const Home = () => {
                     bg={isClicked ? "#F5A623" : "#398DDB"}
                     fontWeight="bold"
                     fontSize={isMobile ? "18px" : "20px" } 
-                    width={isMobile ? "50%" :"55%"}
+                    width={isMobile ? "100%" :"55%"}
                     height="80px"
                     borderRadius="20px"
                     color="white"
