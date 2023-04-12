@@ -37,7 +37,7 @@ const Home = () => {
       <Navbar />
 
       <Box w={"100%"} {...root}>
-      <Flex bgRepeat="no-repeat" bgSize="cover" bgImage="url('/images/enoscoin.mp4')" bgColor="black">
+      <Flex bgRepeat="no-repeat" bgSize="cover" bgImage="url('/images/enoscoin.mp4')" bgColor="#06053e">
       <Container>
         <Flex {...homeBg} id="home">
               {/*  ------------------------------------------- WELCOME HOME TEXT AREA ---------------------------------------------- */}
@@ -67,7 +67,7 @@ const Home = () => {
                  <Suspense fallback={<Spinner size="sm" />}>
                  <Button
                     variant="solid"
-                    bg={isClicked ? "#398DDB" : "#F5A623"}
+                    bg={isClicked ? "#6600BA" : "#F27248"}
                     fontWeight="bold"
                     fontSize="2xl"
                     width="60%"
@@ -95,9 +95,10 @@ const Home = () => {
         </Flex>
         </Container>
       </Flex>
- 
+      </Box>
+
       <Box w={"100%"} {...root}>
-       <Flex bgColor="black" flexDir="column">
+       <Flex bgColor="#06053e" flexDir="column">
         <Container>
             <Flex w={"100%"} flexDir={"column"} {...homeBg}>
                 <Box p="30px 100px" borderRadius="50px"
@@ -148,7 +149,7 @@ const Home = () => {
                 <Suspense fallback={<Spinner size="sm" />}>
                  <Button
                     variant="solid"
-                    bg={isClicked ? "#F5A623" : "#398DDB"}
+                    bg={isClicked ? "#6600BA" : "#F27248"}
                     fontWeight="bold"
                     fontSize={isMobile ? "18px" : "20px" } 
                     width={isMobile ? "100%" :"55%"}
@@ -373,7 +374,7 @@ const Home = () => {
       </Box>
 
       <Box w={"100%"} {...root}>
-       <Flex bgColor="black" flexDir="column" pt="60px">
+       <Flex bgColor="#06053e" flexDir="column" pt="60px" id="tokenomics">
          <Container>
             <Flex w="100%" flexDir="column" {...homeBg}>
                 <Flex alignItems="center" justifyContent="center" textAlign="center" flexDir="column">
@@ -473,8 +474,7 @@ const Home = () => {
          </Container>
        </Flex>
       </Box>
-
-      </Box>
+      
     </Box>
   )
 }

@@ -50,11 +50,11 @@ const Navbar = () => {
       <Flex
         alignItems="center"
         justify="space-between"
-        bg="#0B0B0B"
+        bg="#06053e"
         position= "fixed"
         top={0}
         left={0}
-        boxShadow="0 2px 10px #4ca5ff"
+        boxShadow="0 2px 10px #3ca2f8"
         // p="0px 20px"
         p="0px 30px"
         width="100%"
@@ -78,7 +78,7 @@ const Navbar = () => {
                <Link key={nanoid()} to={item.link}
                >
                  <Button variant="nav" 
-                 fontWeight={500} color="#3482FF"
+                 fontWeight={500} color="#8d68d1"
                   fontSize="18px"
                   _focus={{ color: "ctaBg", fontWeight: "600" }}
                   > {item.name} </Button>
@@ -92,7 +92,7 @@ const Navbar = () => {
                         height: ["70px"],
                         mt: { base: null, md: "10px" },
                         color: "white",
-                        bg: "#488eff",
+                        bg: "#6600BA",
                         fontWeight: "500",
                         fontSize: "16px",
                       }}

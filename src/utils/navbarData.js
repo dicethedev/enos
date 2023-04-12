@@ -16,11 +16,6 @@ export const navbar_data = [
     },
     {
         id: "4",
-        name: "Roadmap",
-        link: "#roadmap"
-    },
-    {
-        id: "5",
         name: "Contact Us",
         link: "#contactus"
     },
