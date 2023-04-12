@@ -20,6 +20,9 @@ import fireIcon from '../assets/fire.png'
 import whaleIcon from '../assets/whale2.png'
 import TeamIcon from '../assets/team.png'
 import safeIcon from '../assets/safe.png'
+import number1 from '../assets/number-1.png'
+import number2 from '../assets/number-2.png'
+import number3 from '../assets/number-3.png'
 // const BuyButton = lazy(() => import("../components/navbar/BuyButton/index"));
 
 const Home = () => {
@@ -367,6 +370,108 @@ const Home = () => {
             </Flex>
         </Container>
       </Flex>
+      </Box>
+
+      <Box w={"100%"} {...root}>
+       <Flex bgColor="black" flexDir="column" pt="60px">
+         <Container>
+            <Flex w="100%" flexDir="column" {...homeBg}>
+                <Flex alignItems="center" justifyContent="center" textAlign="center" flexDir="column">
+                <Heading fontSize={isMobile ? "30px" :"50px"} color="#f497ff" letterSpacing="5px">Ready to get</Heading>
+                <Heading fontSize={isMobile ? "30px" :"50px"} color="#3ca2f8" letterSpacing="6px">$ENOSCOIN?</Heading>
+                </Flex>
+                
+            <SimpleGrid columns={[1, 2]} spacing={10} pt="60px">
+                  <Box bg='white'
+                   bgRepeat="no-repeat" 
+                   bgSize="cover" 
+                   bgImage="url('/images/background-7.jpg')" 
+                   width="100%"
+                   height='100%'
+                   boxShadow="0px 15px 30px rgba(61, 90, 125, 0.08)"
+                   textAlign="center"
+                   borderRadius="20px"
+                   transition=".3s linear"
+                   p="43px 30px 49px"
+                //    alignItems="center"
+                //    justifyContent="center"
+                  >
+                    <Stack
+                     transition=".3s linear"
+                     _hover={{ transform: "scale(1.2)" }}
+                     _focus={{ outline: "none" }}
+                    >
+                     <Image src={number1} alt="" width="150px" height="150px" />
+                    </Stack>
+
+                    <Stack> 
+                        <Text fontSize="24px" fontWeight="600" color="white">Maximum Wallet: 4% - 400,000 Tokens</Text>
+                        <Text fontSize="24px" fontWeight="600" color="white">Maximum Transactions: 2% - 200,000 Tokens</Text>
+                        <Text fontSize="24px" fontWeight="600" color="white">Initial Supply: 10,000,000</Text>
+                    </Stack>
+                  </Box>   
+
+                  <Box bg='white'
+                   bgRepeat="no-repeat" 
+                   bgSize="cover" 
+                   bgImage="url('/images/background-7.jpg')" 
+                   width="100%"
+                   height='100%'
+                   boxShadow="0px 15px 30px rgba(61, 90, 125, 0.08)"
+                   textAlign="center"
+                   borderRadius="20px"
+                   transition=".3s linear"
+                   p="43px 30px 49px"
+                //    alignItems="center"
+                //    justifyContent="center"
+                  >
+                    <Stack
+                     transition=".3s linear"
+                     _hover={{ transform: "scale(1.2)" }}
+                     _focus={{ outline: "none" }}
+                    >
+                     <Image src={number2} alt="" width="150px" height="150px" />
+                    </Stack>
+
+                    <Stack> 
+                        <Text fontSize="24px" fontWeight="600" color="white">Buy Tax: 5%</Text>
+                        <Text fontSize="24px" fontWeight="600" color="white">Sell Tax: 5%</Text>
+                    </Stack>
+                  </Box> 
+
+
+                  <Box bg='white'
+                   bgRepeat="no-repeat" 
+                   bgSize="cover" 
+                   bgImage="url('/images/background-7.jpg')" 
+                   width="100%"
+                   height='100%'
+                   boxShadow="0px 15px 30px rgba(61, 90, 125, 0.08)"
+                   textAlign="center"
+                   borderRadius="20px"
+                   transition=".3s linear"
+                   p="43px 30px 49px"
+                //    alignItems="center"
+                //    justifyContent="center"
+                  >
+                    <Stack
+                     transition=".3s linear"
+                     _hover={{ transform: "scale(1.2)" }}
+                     _focus={{ outline: "none" }}
+                    >
+                     <Image src={number3} alt="" width="150px" height="150px" />
+                    </Stack>
+
+                    <Stack> 
+                        <Text fontSize="24px" fontWeight="600" color="white">- 4% Marketing</Text>
+                        <Text fontSize="24px" fontWeight="600" color="white">- 1% Development</Text>
+                    </Stack>
+                  </Box> 
+
+                </SimpleGrid>
+            </Flex>
+         </Container>
+       </Flex>
       </Box>
 
       </Box>
