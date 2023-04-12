@@ -348,7 +348,7 @@ const Home = () => {
                         zIndex: "-1",
                       }}
                     >
-                     <Image src={safeIcon} alt="" width="70px" height="70px" />
+                     <Image src={safeIcon} alt="" width="70px" height="60px" />
                     </Stack>
 
                     <Stack>
