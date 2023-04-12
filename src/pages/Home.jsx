@@ -9,13 +9,17 @@ import {Box,
  useBreakpointValue,
  Stack,
  Text,
- Divider
+ Divider,
+ SimpleGrid
 } from '@chakra-ui/react'
 import Navbar from '../components/navbar/Navbar'
 import Container from '../components/Container'
 import enosCoinPng from '../assets/enoscoin.jpg'
 import enosSpaceImg from '../assets/enosspace.jpg'
-
+import fireIcon from '../assets/fire.png'
+import whaleIcon from '../assets/whale2.png'
+import TeamIcon from '../assets/team.png'
+import safeIcon from '../assets/safe.png'
 // const BuyButton = lazy(() => import("../components/navbar/BuyButton/index"));
 
 const Home = () => {
@@ -88,20 +92,12 @@ const Home = () => {
         </Flex>
         </Container>
       </Flex>
-
-    
-     
+ 
       <Box w={"100%"} {...root}>
-     <Flex bgColor="black" flexDir="column">
+       <Flex bgColor="black" flexDir="column">
         <Container>
             <Flex w={"100%"} flexDir={"column"} {...homeBg}>
                 <Box p="30px 100px" borderRadius="50px"
-                //     backgroundClip={`"content-box", "border-box"`}
-                //     style={{ backgroundImage: 'linear-gradient(96.94deg, #F5A623 0%, #398DDB 16.81%, #F5A623 33.63%)',
-                //      backgroundOrigin: "border-box",
-                //      border: "4px solid transparent",
-                //      boxShadow: "rgba(240, 239, 253, 1) 1px 1000px 1px inset",
-                //   }}
                   bgColor="white"
                 >
                   <HStack justify="space-between" flexDirection={isMobile ? "column" : "row"}>
@@ -179,10 +175,200 @@ const Home = () => {
 
                   </HStack>
                 </Box>
+
+
+                <SimpleGrid columns={[1, 2, 3, 4]} spacing={6} pt="60px">
+                  <Box bg='white' 
+                   width="100%"
+                   height='100%'
+                   boxShadow="0px 15px 30px rgba(61, 90, 125, 0.08)"
+                   textAlign="center"
+                   borderRadius="20px"
+                   transition=".3s linear"
+                   p="43px 30px 49px"
+                  >
+                    <Stack
+                     width="87px"
+                     height="87px"
+                     margin="0 auto 35px"
+                     pos="relative"
+                     zIndex="1"
+                     transition=".3s linear"
+                     display="flex"
+                     alignItems="center"
+                     justifyContent="center"
+                     _hover={{ transform: "scale(1.2)" }}
+                     _focus={{ outline: "none" }}
+                     _before={{
+                        content: "''",
+                        position: "absolute",
+                        left: "0",
+                        top: "0",
+                        width: "100%",
+                        height: "100%",
+                        bg: "#fff2e4",
+                        borderRadius: "50%",
+                        zIndex: "-1",
+                      }}
+                    >
+                     <Image src={fireIcon} alt="" width="70px" height="70px" />
+                    </Stack>
+
+                    <Stack>
+                        <Heading fontSize="24px" fontWeight="700">Buy Back & Burn</Heading>
+                        <Text opacity="0.7" color="#6b645d" fontSize="20px">
+                         We will conduct buy back and burn, reducing supply and driving up the price of the chart.
+                        Regular buy back and burn will be conducted when the chart needs it.
+                        </Text>
+                    </Stack>
+                  </Box>
+
+                  <Box bg='white' 
+                   width="100%"
+                   height='100%'
+                   boxShadow="0px 15px 30px rgba(61, 90, 125, 0.08)"
+                   textAlign="center"
+                   borderRadius="20px"
+                   transition=".3s linear"
+                   p="43px 30px 49px"
+                  >
+                    <Stack
+                     width="87px"
+                     height="87px"
+                     margin="0 auto 35px"
+                     pos="relative"
+                     zIndex="1"
+                     transition=".3s linear"
+                     display="flex"
+                     alignItems="center"
+                     justifyContent="center"
+                     _hover={{ transform: "scale(1.2)" }}
+                     _focus={{ outline: "none" }}
+                     _before={{
+                        content: "''",
+                        position: "absolute",
+                        left: "0",
+                        top: "0",
+                        width: "100%",
+                        height: "100%",
+                        bg: "#f0ebff",
+                        borderRadius: "50%",
+                        zIndex: "-1",
+                      }}
+                    >
+                     <Image src={whaleIcon} alt="" width="70px" height="70px" />
+                    </Stack>
+
+                    <Stack>
+                        <Heading fontSize="24px" fontWeight="700">Anti Whale Measures</Heading>
+                        <Text opacity="0.7" color="#6b645d" fontSize="20px">
+                         We will take all possible measures to support our chart and build a healthy chart,
+                         for this we will be keeping max wallet of 3% of the total supply and a max transaction of 
+                         2% at a time. This will prevent dumping our chart by whales.
+                        </Text>
+                    </Stack>
+                  </Box>
+
+                  <Box bg='white' 
+                   width="100%"
+                   height='100%'
+                   boxShadow="0px 15px 30px rgba(61, 90, 125, 0.08)"
+                   textAlign="center"
+                   borderRadius="20px"
+                   transition=".3s linear"
+                   p="43px 30px 49px"
+                  >
+                    <Stack
+                     width="87px"
+                     height="87px"
+                     margin="0 auto 35px"
+                     pos="relative"
+                     zIndex="1"
+                     transition=".3s linear"
+                     display="flex"
+                     alignItems="center"
+                     justifyContent="center"
+                     _hover={{ transform: "scale(1.2)" }}
+                     _focus={{ outline: "none" }}
+                     _before={{
+                        content: "''",
+                        position: "absolute",
+                        left: "0",
+                        top: "0",
+                        width: "100%",
+                        height: "100%",
+                        bg: "#edeef1",
+                        borderRadius: "50%",
+                        zIndex: "-1",
+                      }}
+                    >
+                     <Image src={TeamIcon} alt="" width="70px" height="70px" />
+                    </Stack>
+
+                    <Stack>
+                        <Heading fontSize="24px" fontWeight="700">Experienced Team</Heading>
+                        <Text opacity="0.7" color="#6b645d" fontSize="20px">
+                         Our team is built by experienced developers
+                         and marketing advisors from successful projects
+                         back in 2020.
+                        </Text>
+                    </Stack>
+                  </Box>
+
+                  <Box bg='white' 
+                   width="100%"
+                   height='100%'
+                   boxShadow="0px 15px 30px rgba(61, 90, 125, 0.08)"
+                   textAlign="center"
+                   borderRadius="20px"
+                   transition=".3s linear"
+                   p="43px 30px 49px"
+                  >
+                    <Stack
+                     width="87px"
+                     height="87px"
+                     margin="0 auto 35px"
+                     pos="relative"
+                     zIndex="1"
+                     transition=".3s linear"
+                     display="flex"
+                     alignItems="center"
+                     justifyContent="center"
+                     _hover={{ transform: "scale(1.2)" }}
+                     _focus={{ outline: "none" }}
+                     _before={{
+                        content: "''",
+                        position: "absolute",
+                        left: "0",
+                        top: "0",
+                        width: "100%",
+                        height: "100%",
+                        bg: "#e4f1ff",
+                        borderRadius: "50%",
+                        zIndex: "-1",
+                      }}
+                    >
+                     <Image src={safeIcon} alt="" width="70px" height="70px" />
+                    </Stack>
+
+                    <Stack>
+                        <Heading fontSize="24px" fontWeight="700">SAFE</Heading>
+                        <Text opacity="0.7" color="#6b645d" fontSize="20px">
+                        Contract will be verified and renounced without
+                        any hidden mint function.Liquidity will be
+                        locked in a safe locker.
+                        </Text>
+                    </Stack>
+                  </Box>
+
+                </SimpleGrid>
+
+                 
             </Flex>
         </Container>
       </Flex>
       </Box>
+
       </Box>
     </Box>
   )
