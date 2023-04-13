@@ -11,7 +11,9 @@ import {Box,
  Text,
  Divider,
  SimpleGrid,
- FormControl, FormLabel, Input, Textarea,
+ FormControl, 
+ Input, 
+ Textarea,
 } from '@chakra-ui/react'
 import Navbar from '../components/navbar/Navbar'
 import Container from '../components/Container'
