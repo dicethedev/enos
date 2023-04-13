@@ -486,8 +486,8 @@ const Home = () => {
             bg="#F0EBFF" p="40px" borderRadius="10px">
              <Stack mb={isMobile ? "30px" : "" }>
              <Heading fontSize={isMobile ? "20px" :"30px"} color="#f497ff" letterSpacing="4px">Contact Us</Heading>
-             <Heading width="70%" fontSize={isMobile ? "20px" :"40px"} color="#3ca2f8" pb="20px">$ENOSCOIN community on making</Heading>
-             <Text width="70%" fontWeight="500" fontSize={isMobile ? "16px" :"18px"}>
+             <Heading width={isMobile ? "100%" : "70%"}  fontSize={isMobile ? "20px" :"40px"} color="#3ca2f8" pb="20px">$ENOSCOIN community on making</Heading>
+             <Text width={isMobile ? "100%" : "70%"} fontWeight="500" fontSize={isMobile ? "16px" :"18px"}>
              Ham The Astrochimp Is Formed By Every And Single One Of Its Members, All As One And Equally Important. The Magic Lies In The Unity As A Group.Join Ham The Astrochimp
               Community And Its Different Activities That Will Keep The Group And Its Members Active!
              </Text>
