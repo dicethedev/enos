@@ -23,7 +23,7 @@ const CustomCursor = () => {
     height="25px"
     borderRadius="50%"
     backgroundColor="transparent"
-    border="4px solid #398DDB"
+    border="4px solid #F27248"
     pointerEvents="none"
     zIndex="9999"
     left={`${position.x - 30}px`}

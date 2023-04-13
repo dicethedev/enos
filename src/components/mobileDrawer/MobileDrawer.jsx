@@ -21,7 +21,7 @@ export default function MobileDrawer() {
 
 return (
     <Flex justify="center" alignItems="center">
-      <Button ref={btnRef} onClick={onOpen} bg="none" color="blue.400" _hover={{ bg: "none", boxShadow: "none" }}>
+      <Button ref={btnRef} onClick={onOpen} bg="none" color="#6600BA" _hover={{ bg: "none", boxShadow: "none" }}>
         <IoMdMenu size="40px"  />
       </Button>
       

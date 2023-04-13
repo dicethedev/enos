@@ -10,7 +10,8 @@ import {Box,
  Stack,
  Text,
  Divider,
- SimpleGrid
+ SimpleGrid,
+ FormControl, FormLabel, Input, Textarea,
 } from '@chakra-ui/react'
 import Navbar from '../components/navbar/Navbar'
 import Container from '../components/Container'
@@ -474,7 +475,118 @@ const Home = () => {
          </Container>
        </Flex>
       </Box>
-      
+
+      <Box w={"100%"} {...root}>
+      <Flex bgColor="#06053e" flexDir="column" pt="60px" id="tokenomics">
+         <Container>
+         <Flex w="100%" flexDir="column" {...homeBg}>
+          <HStack justify="space-between" flexDir={isMobile ? "column" : "row"}
+            bg="#F0EBFF" p="40px" borderRadius="10px">
+             <Stack mb={isMobile ? "30px" : "" }>
+             <Heading fontSize={isMobile ? "20px" :"30px"} color="#f497ff" letterSpacing="4px">Contact Us</Heading>
+             <Heading width="70%" fontSize={isMobile ? "20px" :"40px"} color="#3ca2f8" pb="20px">$ENOSCOIN community on making</Heading>
+             <Text width="70%" fontWeight="500" fontSize={isMobile ? "16px" :"18px"}>
+             Ham The Astrochimp Is Formed By Every And Single One Of Its Members, All As One And Equally Important. The Magic Lies In The Unity As A Group.Join Ham The Astrochimp
+              Community And Its Different Activities That Will Keep The Group And Its Members Active!
+             </Text>
+             </Stack>
+
+            <Box bg="white" p={isMobile ? "30px 25px" : "62px 58px 44px"}
+            borderRadius="20px" width="100%" 
+            height="100%"
+            boxShadow="0px 15px 30px rgba(61, 90, 125, 0.08)"
+            border="1px solid #f3f3f3"
+            >
+             <Text mb="30px" fontSize={isMobile ? "20px" : "30px"} fontWeight="600">Contact Us</Text>
+            <FormControl mb="20px">
+              <Input type="email" placeholder="Name" 
+              sx={{
+                fontSize: "16px",
+                padding: "22px 28px",
+                height: "70px",
+                border: "1px solid #d5d5d5",
+                _hover: {
+                  borderColor: "gray.500",
+                },
+                _placeholder: {
+                   fontWeight: "600"
+                },
+                _focus: {
+                    border: "2px solid #d5d5d5",
+                    boxShadow: "none",
+                  },
+              }}
+              />
+            </FormControl>
+
+            <FormControl mb="20px">
+              <Input type="email" placeholder="Email" 
+              sx={{
+                fontSize: "16px",
+                padding: "22px 28px",
+                height: "70px",
+                border: "1px solid #d5d5d5",
+                _hover: {
+                  borderColor: "gray.500",
+                },
+                _placeholder: {
+                   fontWeight: "600"
+                },
+                _focus: {
+                    border: "2px solid #d5d5d5",
+                    boxShadow: "none",
+                  },
+              }}
+              />
+            </FormControl>
+
+            <FormControl mb="20px">
+              <Textarea placeholder="Message" 
+               sx={{
+                   fontSize: "16px",
+                   padding: "22px 28px",
+                   border: "1px solid #d5d5d5",
+                   _hover: {
+                       borderColor: "gray.500",
+                   },
+                   _placeholder: {
+                    fontWeight: "600"
+                   },
+                  _focus: {
+                     border: "2px solid #d5d5d5",
+                     boxShadow: "none",
+                     },
+                 }}
+              />
+            </FormControl>
+
+            <Button type="submit" mt={4} 
+             bg="#6600BA none repeat scroll 0 0"
+             userSelect="none"
+             fontSize="16px"
+             color="white"
+             display="inline-block"
+             fontWeight={600}
+             borderRadius={"10px"}
+             p="10px 70px"
+             verticalAlign="middle"
+             textTransform="capitalize"
+             textAlign="center"
+             whiteSpace="nowrap"
+             position= "relative"
+             overflow="hidden"
+             zIndex="1"
+             _hover={{bg: "#6600BA none repeat scroll 0 0"}}
+            >
+            Submit
+           </Button>
+          </Box>
+          </HStack>
+         </Flex>
+         </Container>
+        </Flex>
+      </Box>
+
     </Box>
   )
 }
