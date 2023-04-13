@@ -4,11 +4,10 @@ import {
      Flex, 
      Button,  
      VStack, 
+     Stack
     } from "@chakra-ui/react";
 import DrawerBg from "./DrawerBg";
 import { IoMdMenu } from 'react-icons/io';
-import { Link } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
 import { navbar_data } from "../../utils/navbarData";
 import { nanoid } from "nanoid";
 
@@ -32,9 +31,9 @@ return (
       >
         <VStack alignItems="left">
           {navbar_data.map((item) => (
-            <Link key={nanoid()} to={item.link}>
+            <Stack as="a" key={nanoid()} href={item.link}>
               <Button variant='text' fontWeight="400"> {item.name} </Button>
-            </Link>
+            </Stack>
           ))}
         
         </VStack>
