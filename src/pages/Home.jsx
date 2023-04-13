@@ -26,6 +26,7 @@ import safeIcon from '../assets/safe.png'
 import number1 from '../assets/number-1.png'
 import number2 from '../assets/number-2.png'
 import number3 from '../assets/number-3.png'
+import Footer from '../components/Footer'
 // const BuyButton = lazy(() => import("../components/navbar/BuyButton/index"));
 
 const Home = () => {
@@ -36,6 +37,7 @@ const Home = () => {
     const isMobile = useBreakpointValue({ base: true, md: true, lg: false });
 
   return (
+    <>
     <Box w={"100%"}>
       <Navbar />
 
@@ -589,7 +591,10 @@ const Home = () => {
         </Flex>
       </Box>
 
+  
     </Box>
+    <Footer />
+    </>
   )
 }
 
