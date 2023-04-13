@@ -6,14 +6,15 @@ import {
   useBreakpointValue, 
   Text,
   Spinner,
-  Stack
+  Stack,
+  Image
 } from '@chakra-ui/react';
 import { Suspense, lazy } from 'react';
 import { useEffect, useRef, useState } from "react";
 import { nanoid } from "nanoid";
 import {navbar_data} from '../../utils/navbarData';
 import { Link } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
+import enoscoinLogo from '../../assets/enoscoin - Copy.jpg';
 import MobileDrawer from "../mobileDrawer/MobileDrawer";
 
 const BuyButton = lazy(() => import("../navbar/BuyButton/index"));
@@ -67,8 +68,7 @@ const Navbar = () => {
       >
        <Link to="/">
         <Flex flexDir="column" alignItems="center" color="white">
-         <Text fontFamily="Cantarell" fontWeight="700" fontSize="24px" letterSpacing="5px">Enos</Text>
-         <Text fontSize="18px">Coin</Text>
+          <Image src={enoscoinLogo} alt="" width="70px" height="70px" />
         </Flex>
       </Link>    
      
