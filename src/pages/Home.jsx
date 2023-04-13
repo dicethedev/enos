@@ -42,7 +42,8 @@ const Home = () => {
       <Navbar />
 
       <Box w={"100%"} {...root}>
-      <Flex bgRepeat="no-repeat" bgSize="cover" bgImage="url('/images/enoscoin.mp4')" bgColor="#06053e">
+      <Flex bgRepeat="no-repeat" bgSize="cover" bgImage="url('/images/enoscoin.mp4')"
+       bgColor="#06053e">
       <Container>
         <Flex {...homeBg} id="home">
               {/*  ------------------------------------------- WELCOME HOME TEXT AREA ---------------------------------------------- */}
@@ -105,26 +106,24 @@ const Home = () => {
       <Box w={"100%"} {...root}>
        <Flex bgColor="#06053e" flexDir="column">
         <Container>
-            <Flex w={"100%"} flexDir={"column"} {...homeBg}>
-                <Box p="30px 100px" borderRadius="50px"
-                  bgColor="white"
-                >
+            <Flex w={"100%"} flexDir={"column"} {...homeBg}  id="about">
+                <Box p="30px 100px" borderRadius="50px"bgColor="#F0EBFF">
                   <HStack justify="space-between" flexDirection={isMobile ? "column" : "row"}>
                     <Stack flexDir={"column"} pt="40px" 
                     alignItems={isMobile ? "center" : ""}
                     >
                         <Heading fontSize={isMobile ? "25px" :"40px"} fontWeight="500" color="#f89e52" mb="20px">Enos Coin</Heading>
                         <Heading fontSize={isMobile ? "30px" : "80px"} fontWeight="700" pb="15px">About Enos</Heading>
-                        <Heading opacity="0.5" fontSize={isMobile ? "18px" :"21px"} color="#5f5f71"
+                        <Text opacity="0.5" fontSize={isMobile ? "18px" :"21px"} color="#5f5f71"
                         width={isMobile ? "100%" : "80%"}
-                        pb="40px"
+                        pb="40px" fontWeight={600}
                         >Ham, a chimpanzee also known as Ham the Chimp and Ham the Astrochimp, 
                          was the first Great Ape launched into space on January 31, 1961.
-                        </Heading>
+                        </Text>
 
-                        <Heading opacity="0.5" fontSize={isMobile ? "18px" :"21px"} color="#5f5f71"
+                        <Text opacity="0.5" fontSize={isMobile ? "18px" :"21px"} color="#5f5f71"
                         width={isMobile ? "100%" : "80%"}
-                        pb="24px"
+                        pb="24px" fontWeight={600}
                         >
                         On January 31, 1961, Ham flew a suborbital flight on the
                         Mercury-Redstone 2 mission, part of the U.S. space program's 
@@ -132,7 +131,7 @@ const Home = () => {
                         that prepared him for his historic mission—the Holloman Aerospace Medical Center, located at Holloman Air Force Base in New Mexico, southwest of Alamogordo.
                         His name was also in honor of the commander of Holloman Aeromedical 
                         Laboratory, Lieutenant Colonel Hamilton "Ham" Blackshear.
-                        </Heading>
+                        </Text>
 
 
                         <Divider width="80%" height="1.5px" bg="radial-gradient(circle, rgba(196, 208, 217, 1) 0%, rgba(218, 226, 233, 0.44021358543417366) 100%)" />
@@ -481,9 +480,9 @@ const Home = () => {
       </Box>
 
       <Box w={"100%"} {...root}>
-      <Flex bgColor="#06053e" flexDir="column" pt="60px" id="tokenomics">
+      <Flex bgColor="#06053e" flexDir="column" pt="60px">
          <Container>
-         <Flex w="100%" flexDir="column" {...homeBg}>
+         <Flex w="100%" flexDir="column" {...homeBg} id="contactus">
           <HStack justify="space-between" flexDir={isMobile ? "column" : "row"}
             bg="#F0EBFF" p="40px" borderRadius="10px">
              <Stack mb={isMobile ? "30px" : "" }>
@@ -591,7 +590,6 @@ const Home = () => {
         </Flex>
       </Box>
 
-  
     </Box>
     <Footer />
     </>

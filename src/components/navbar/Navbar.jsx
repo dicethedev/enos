@@ -5,7 +5,8 @@ import {
   chakra,  
   useBreakpointValue, 
   Text,
-  Spinner
+  Spinner,
+  Stack
 } from '@chakra-ui/react';
 import { Suspense, lazy } from 'react';
 import { useEffect, useRef, useState } from "react";
@@ -75,14 +76,14 @@ const Navbar = () => {
             <>
              <HStack as="nav" spacing="5">
              {navbar_data.map((item) => (
-               <Link key={nanoid()} to={item.link}
+               <Stack as="a" key={nanoid()} href={item.link}
                >
                  <Button variant="nav" 
                  fontWeight={500} color="#8d68d1"
                   fontSize="18px"
                   _focus={{ color: "ctaBg", fontWeight: "600" }}
                   > {item.name} </Button>
-               </Link>
+               </Stack>
              ))}
                 <Suspense fallback={<Spinner size="sm" />}>
                     <BuyButton
